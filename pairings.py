@@ -12,5 +12,6 @@ def pair_random(players):
     while len(players) > 1 :  
         pairs.append((players[0], players [-1]))
         players.pop(-1)
-        players.pop(0)
+   pairs = [ (c.pop(), c.pop()) for _ in range(len(c)//2) ]
+   if c: pairs.append((c.pop(), None))
     return pairs
